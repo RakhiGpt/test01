@@ -36,7 +36,7 @@ pipeline {
                 echo "running test_otp.py"
                 bat '''
                 call venv\\Scripts\\activate 
-                python test_otp.py
+                pytest test_otp.py
                 '''
             }
         }
