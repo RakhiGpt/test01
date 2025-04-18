@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git url: 'https://github.com/RakhiGpt/test1.git', branch: 'main'
+                git url: 'https://github.com/RakhiGpt/test01.git', branch: 'main'
             }
         }
 
