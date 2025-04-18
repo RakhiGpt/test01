@@ -1,4 +1,4 @@
-from otp import generate_otp
+from test01.otp import generate_otp
 
 def test_otp_length():
     otp = generate_otp()
