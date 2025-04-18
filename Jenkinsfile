@@ -20,13 +20,7 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                echo "Running tests using pytest"
-                bat '.\\venv\\Scripts\\activate && pytest test_otp.py'
-            }
-        }
-
+        
         stage('Run OTP Generator') {
             steps {
                 echo "Executing otp.py"
@@ -36,6 +30,7 @@ pipeline {
                 '''
             }
         }
+
         stage('Run tests') {
             steps {
                 echo "running test_otp.py"
@@ -47,3 +42,5 @@ pipeline {
         }
     }
 }
+                           
+      
